@@ -37,13 +37,14 @@ class RegisterPayment(tk.Frame):
         label = tk.Label(self, text="Register Payment Page")
         label.pack(pady=10, padx=10)
 
-        """ Vise visuelt inputfelter og en submit knap"""
+        #TODO Vise visuelt inputfelter og en submit knap"""
 
         button = tk.Button(self, text="Back to Home", command=lambda: controller.show_frame("HomePage"))
         button.pack()
 
     def Betal (self):
-        """ Implementere betalings kode så en fodboldnørd kan indbetale til deres rejse"""
+        #TODO Implementere betalings kode så en fodboldnørd kan indbetale til deres rejse
+
 class ListPayments(tk.Frame):
     def __init__(self, parent, controller):
         super().__init__(parent)
@@ -51,13 +52,12 @@ class ListPayments(tk.Frame):
 
         label = tk.Label(self, text="View Payments Page")
         label.pack(pady=10, padx=10)
-
-        """ Visuelt repræsenter tabel over fodboldnørdernes indbetalte penge"""
+        #TODO Visuelt repræsenter tabel over fodboldnørdernes indbetalte penge
         button = tk.Button(self, text="Back to Home", command=lambda: controller.show_frame("HomePage"))
         button.pack()
 
     def Liste_over_betalinger (self):
-        """ Implentere kode som henter og fremviser betalinger for dict (Pickl)"""
+        #TODO Implentere kode som henter og fremviser betalinger for dict (Pickl)
 class WorstPayers(tk.Frame):
     def __init__(self, parent, controller):
         super().__init__(parent)
@@ -66,12 +66,12 @@ class WorstPayers(tk.Frame):
         label = tk.Label(self, text="View Worst Payers Page")
         label.pack(pady=10, padx=10)
 
-        """ Visuelt repræsenter tabel over hvem af fodboldnørderne der har indbetaltet mindst penge"""
+        #TODO Visuelt repræsenter tabel over hvem af fodboldnørderne der har indbetaltet mindst penge"""
 
         button = tk.Button(self, text="Back to Home", command=lambda: controller.show_frame("HomePage"))
         button.pack()
     def Liste_over_mindst_betalinger (self):
-        """ Implentere kode som henter og sortere for at fremvise hvilke fodboldnørder der har indbetalt mindst. Fra dict (Pickl)"""
+        #TODO Implentere kode som henter og sortere for at fremvise hvilke fodboldnørder der har indbetalt mindst. Fra dict (Pickl)"""
 class SinglePageApp(tk.Tk):
     def __init__(self):
         super().__init__()
