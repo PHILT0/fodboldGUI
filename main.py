@@ -8,14 +8,14 @@ from worstWindow import worstWindowClass
 
 class mainWindow:
     def __init__(self):
-        self.total = 1200
-        self.target = 4500
+        self.total = 0.42069
+        self.target = 5000
         # creating tkinter window
         self.root = Tk()
 
         #TEXT
 
-        velkomst = Label(self.root, text="Velkommen til fodboldtur GUI")
+        velkomst = Label(self.root, text="Velkommen til fodboldtur GUUUI")
         velkomst.pack(pady=10)
 
         # Progress bar widget
